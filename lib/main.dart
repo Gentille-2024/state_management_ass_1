@@ -198,7 +198,7 @@ class HomePage extends StatelessWidget {
                       ),
                       SizedBox(height: 10),
                       Text(
-                        'How the rebuild happens:'
+                        'How the rebuild happens:\n'
                         '1. User presses button (e.g., Increase)\n'
                         '2. Button calls context.read<CounterProvider>().increment()\n'
                         '3. increment() modifies _counter and calls notifyListeners()\n'
