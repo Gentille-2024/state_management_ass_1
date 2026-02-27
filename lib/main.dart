@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-// ============================================================================
 // STEP 2: CREATING A STATE CLASS
-// ============================================================================
 // A state class extends ChangeNotifier to manage app state and notify listeners
 
 class CounterProvider extends ChangeNotifier {
@@ -16,19 +14,19 @@ class CounterProvider extends ChangeNotifier {
   // Method to increment counter
   void increment() {
     _counter++;
-    notifyListeners(); // Notifies all listeners about the state change
+    notifyListeners(); 
   }
 
   // Method to decrement counter
   void decrement() {
     _counter--;
-    notifyListeners(); // Notifies all listeners about the state change
+    notifyListeners(); 
   }
 
   // Method to reset counter
   void reset() {
     _counter = 0;
-    notifyListeners(); // Notifies all listeners about the state change
+    notifyListeners(); 
   }
 }
 
@@ -59,11 +57,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ============================================================================
 // STEP 4: ACCESSING THE STATE & STEP 5: UPDATING THE STATE
-// STEP 6: HOW UI REBUILD HAPPENS
-// ============================================================================
-// Different ways to access and update state are shown below
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -187,9 +181,7 @@ class HomePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
 
-                // ================================================================
                 // UI REBUILD EXPLANATION
-                // ================================================================
                 Container(
                   padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
